@@ -1,0 +1,9 @@
+com:
+ sapient:
+  services:
+    bids:
+     couchbase:
+      host: localhost
+      bucketName: default
+      bucketConnectionTimeout: 15
+     server.port=9002
