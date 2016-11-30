@@ -7,3 +7,10 @@ com:
       bucketName: default
       bucketConnectionTimeout: 15
 server.port:9002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10001/eureka/
+    healthcheck: 
+      enabled: true
+      
