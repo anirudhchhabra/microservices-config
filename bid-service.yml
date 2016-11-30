@@ -1,6 +1,6 @@
 couchbase:
  host: bangvmpltescouchdb.sapient.com
- bucketName: default
+ bucketName: microservices
  bucketConnectionTimeout: 15
 server:
  port: 9002
