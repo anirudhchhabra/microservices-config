@@ -6,4 +6,4 @@ com:
       host: localhost
       bucketName: default
       bucketConnectionTimeout: 15
-     server.port=9002
+server.port:9002
