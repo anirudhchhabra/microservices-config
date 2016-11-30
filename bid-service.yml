@@ -1,11 +1,7 @@
-com:
- sapient:
-  services:
-    bids:
-     couchbase:
-      host: bangvmpltescouchdb.sapient.com
-      bucketName: default
-      bucketConnectionTimeout: 15
+couchbase:
+ host: bangvmpltescouchdb.sapient.com
+ bucketName: default
+ bucketConnectionTimeout: 15
 server:
  port: 9002
 eureka:
