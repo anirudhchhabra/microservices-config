@@ -3,10 +3,11 @@ com:
   services:
     bids:
      couchbase:
-      host: localhost
+      host: bangvmpltescouchdb.sapient.com
       bucketName: default
       bucketConnectionTimeout: 15
-server.port:9002
+server:
+ port: 9002
 eureka:
   client:
     serviceUrl:
