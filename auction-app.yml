@@ -1,7 +1,7 @@
 eureka:
  client:
   serviceUrl:
-   defaultZone: http://localhost:10001/eureka/
+   defaultZone: http://bangvmpltesappsrv.sapient.com:10001/eureka/
   healthcheck: 
    enabled: true
    
