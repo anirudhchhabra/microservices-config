@@ -10,4 +10,6 @@ eureka:
       defaultZone: http://localhost:10001/eureka/
     healthcheck: 
       enabled: true
+  instance:
+    prefer-ip-address: true
       
