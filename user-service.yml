@@ -1,0 +1,14 @@
+couchbase:
+ host: bangvmpltescouchdb.sapient.com
+ bucketName: microservices
+ bucketConnectionTimeout: 15
+server:
+ port: 9000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://bangvmpltesappsrv.sapient.com:10001
+    healthcheck: 
+      enabled: true
+  instance:
+    prefer-ip-address: true
