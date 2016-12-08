@@ -3,7 +3,7 @@ couchbase:
  bucketName: microservices
  bucketConnectionTimeout: 15
 server:
- port: 9000
+ port: 0
 eureka:
   client:
     serviceUrl:
