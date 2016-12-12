@@ -4,7 +4,7 @@ eureka:
    defaultZone: http://bangvmpltesappsrv.sapient.com:10001/eureka/
   healthcheck: 
    enabled: true
-   
- logging.level.feign=DEBUG
+
+logging.level.feign:DEBUG
 
       
