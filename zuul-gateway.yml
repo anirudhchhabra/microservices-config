@@ -20,7 +20,6 @@ eureka:
     healthcheck: 
       enabled: true
   instance:
-    non-secure-port: 0
     prefer-ip-address: true
 zuul:
   routes:
@@ -44,7 +43,7 @@ foo.ribbon.eureka.enabled: true
 zuul-gateway.ribbon.eureka.enabled: true
 
 server:
-  port: 0
+  port: 9000
   error:
     whitelabel:
       enabled: false
