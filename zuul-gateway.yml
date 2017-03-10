@@ -20,6 +20,7 @@ eureka:
     healthcheck: 
       enabled: true
   instance:
+    non-secure-port: 0
     prefer-ip-address: true
 zuul:
   routes:
