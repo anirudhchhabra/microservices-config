@@ -31,7 +31,7 @@ zuul:
   routes:
     users:
       serviceId: user-service
-      strip-prefix: true
+      #strip-prefix: true
     sales:
       serviceId: sale-service
     bids:
