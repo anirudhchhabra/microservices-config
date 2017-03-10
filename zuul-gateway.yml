@@ -13,21 +13,14 @@ ribbon:
   eureka:
     enabled: true
   IsSecure: false
-
 eureka:
-  instance:
-    instance-id: ${spring.application.name}.sapient.com 
-    secureVirtualHostName: ${spring.application.name}.sapient.com
-    prefer-ip-address: true
   client:
-   fetch-registry: true
-   #fetch-remote-regions-registry: true
-   filter-only-up-instances: false
-   prefer-same-zone-eureka: false
-   
-   serviceUrl:
-    defaultZone: http://bangvmpltesappsrv.sapient.com:10001/eureka/
-   enabled: true
+    serviceUrl:
+      defaultZone: http://bangvmpltesappsrv.sapient.com:10001/eureka/
+    healthcheck: 
+      enabled: true
+  instance:
+    prefer-ip-address: true
 zuul:
   routes:
     users:
