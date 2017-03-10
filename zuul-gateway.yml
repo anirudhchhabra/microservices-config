@@ -18,6 +18,7 @@ eureka:
   instance:
     instance-id: ${spring.application.name}.sapient.com 
     secureVirtualHostName: ${spring.application.name}.sapient.com
+    prefer-ip-address: true
   client:
    fetch-registry: true
    #fetch-remote-regions-registry: true
