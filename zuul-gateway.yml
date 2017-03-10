@@ -31,11 +31,13 @@ zuul:
   routes:
     users:
       serviceId: user-service
-      #strip-prefix: true
+      strip-prefix: false
     sales:
       serviceId: sale-service
+      strip-prefix: false
     bids:
       serviceId: bid-service
+      strip-prefix: false
     redirect:
       url: http://google.com
     user-by-address:
