@@ -1,0 +1,58 @@
+#zuul.routes.books.url: http://localhost:8090
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+ribbon: 
+  ConnectTimeout: 30000
+  ReadTimeout: 990000
+  maxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  eureka:
+    enabled: true
+  IsSecure: false
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}.sapient.com 
+    secureVirtualHostName: ${spring.application.name}.sapient.com
+  client:
+   fetch-registry: true
+   #fetch-remote-regions-registry: true
+   filter-only-up-instances: false
+   prefer-same-zone-eureka: false
+   
+   serviceUrl:
+    defaultZone: http://bangvmpltesappsrv.sapient.com:10001/eureka/
+   enabled: true
+zuul:
+  routes:
+    users:
+      serviceId: user-service
+      strip-prefix: true
+    sales:
+      serviceId: sale-service
+    bids:
+      serviceId: bid-service
+    redirect:
+      url: http://google.com
+    user-by-address:
+      path: /bids-by-address/**
+      url: http://10.150.17.150:37106/bids
+    static:
+      path: /static/**
+foo.ribbon.eureka.enabled: true
+zuul-gateway.ribbon.eureka.enabled: true
+
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+        
+
+  
+    
+  
