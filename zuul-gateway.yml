@@ -43,7 +43,7 @@ foo.ribbon.eureka.enabled: true
 zuul-gateway.ribbon.eureka.enabled: true
 
 server:
-  port: 9000
+  port: 8085
   error:
     whitelabel:
       enabled: false
