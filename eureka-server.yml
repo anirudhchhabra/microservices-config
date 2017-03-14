@@ -11,7 +11,14 @@ eureka:
   client:
    register-with-eureka: false
    fetch-registry: false
-    
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: eureka-user
+    password: zaq12wsx
+
 logging:
  level:
   com:
