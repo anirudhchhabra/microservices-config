@@ -1,18 +1,12 @@
-api:
- version:
-  zuul: 1.0
-  bids: 1.0
-  users: 1.0
-  sales: 1.0  
 eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka-user:zaq12wsx@bangvmpltesappsrv.sapient.com:10001/eureka/
   instance:
     prefer-ip-address: true
-    appname: ${spring.application.name}-${zuul.version}
-    instance-id: ${spring.application.name}-${zuul.version}
-    virtual-host-name: ${spring.application.name}-${zuul.version}
+    appname: ${spring.application.name}-${api.version.zuul}
+    instance-id: ${spring.application.name}-${api.version.zuul}
+    virtual-host-name: ${spring.application.name}-${api.version.zuul}
 zuul:
   routes:
     users:
