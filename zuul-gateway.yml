@@ -21,11 +21,11 @@ zuul:
       strip-prefix: false
     users-versioned:
       path: /${api.version.users}/users/**
-      serviceId: user-service
+      serviceId: user-service-${api.version.users}
       strip-prefix: false
     sales-versioned:
       path: /${api.version.sales}/sales/**
-      serviceId: sale-service
+      serviceId: sale-service-${api.version.sales}
       strip-prefix: false
     bids-versioned:
       path: /${api.version.bids}/bids/**
