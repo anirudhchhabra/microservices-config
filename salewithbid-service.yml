@@ -1,0 +1,14 @@
+couchbase:
+ host: bangvmpltescouchdb.sapient.com
+ bucketName: microservices
+ bucketConnectionTimeout: 15
+server:
+ port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-user:zaq12wsx@bangvmpltesappsrv.sapient.com:10001/eureka/
+    healthcheck: 
+      enabled: true
+  instance:
+    prefer-ip-address: true
