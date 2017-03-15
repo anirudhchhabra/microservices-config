@@ -9,16 +9,6 @@ eureka:
     virtual-host-name: ${spring.application.name}-${api.version.zuul}
 zuul:
   routes:
-    users:
-      serviceId: user-service
-      strip-prefix: false
-    sales:
-      serviceId: sale-service
-      strip-prefix: false
-    bids:
-      path: /bids/**
-      serviceId: bid-service
-      strip-prefix: false
     users-versioned:
       path: /${api.version.users}/users/**
       serviceId: user-service-${api.version.users}
@@ -31,10 +21,21 @@ zuul:
       path: /${api.version.bids}/bids/**
       serviceId: bid-service-${api.version.bids}
       strip-prefix: false
+    users:
+      serviceId: user-service
+      strip-prefix: false
+    sales:
+      serviceId: sale-service
+      strip-prefix: false
+    bids:
+      path: /bids/**
+      serviceId: bid-service
+      strip-prefix: false  
     search:
       path: /search/**
       url: http://bangvmpltesappsrv.sapient.com:9200/microservices_search4/couchbaseDocument/_search 
       strip-prefix: true
+      
     static:
       path: /static/**
 server:
