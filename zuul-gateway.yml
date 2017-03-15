@@ -10,9 +10,9 @@ eureka:
       defaultZone: http://eureka-user:zaq12wsx@bangvmpltesappsrv.sapient.com:10001/eureka/
   instance:
     prefer-ip-address: true
-    #appname: ${spring.application.name}-${zuul.version}
-    #instance-id: ${spring.application.name}-${zuul.version}
-    #virtual-host-name: ${spring.application.name}-${zuul.version}
+    appname: ${spring.application.name}-${zuul.version}
+    instance-id: ${spring.application.name}-${zuul.version}
+    virtual-host-name: ${spring.application.name}-${zuul.version}
 zuul:
   routes:
     users:
