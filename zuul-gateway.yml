@@ -29,7 +29,7 @@ zuul:
       serviceId: sale-service
       strip-prefix: false
     bids:
-      serviceId: bid-service
+      serviceId: bid-service-1.1
       strip-prefix: false
     search:
       path: /search/**
