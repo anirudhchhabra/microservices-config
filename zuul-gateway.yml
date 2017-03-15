@@ -1,7 +1,7 @@
 api:
  version:
   zuul: 1.1
-  bids: 1.1
+  bids: 1.0
   users: 1.0
   sales: 1.0  
 eureka:
