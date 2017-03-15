@@ -13,10 +13,7 @@ eureka:
       defaultZone: http://eureka-user:zaq12wsx@bangvmpltesappsrv.sapient.com:10001/eureka/
   instance:
     prefer-ip-address: true
-    homePageUrlPath: /${api.version}
+    homePageUrlPath: /${api.version}/bids
     healthCheckUrlPath: /health
-    metadataMap:
-     instanceId: ${spring.application.name}:${server.port}
-     versions: ${api.version}
-
-      
+    appname: ${spring.application.name}-${api.version}
+    virtual-host-name: ${spring.application.name}-${api.version}
