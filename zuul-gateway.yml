@@ -31,6 +31,9 @@ zuul:
     bids:
       serviceId: bid-service-1.1
       strip-prefix: false
+    salewithbid:
+      serviceId: salewithbid-service
+      strip-prefix: false
     search:
       path: /search/**
       url: http://bangvmpltesappsrv.sapient.com:9200/microservices_search4/couchbaseDocument/_search 
