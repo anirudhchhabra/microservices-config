@@ -4,9 +4,9 @@ eureka:
       defaultZone: http://eureka-user:zaq12wsx@bangvmpltesappsrv.sapient.com:10001/eureka/
   instance:
     prefer-ip-address: true
-    appname: ${spring.application.name}-${api.version.zuul}
-    instance-id: ${spring.application.name}-${api.version.zuul}
-    virtual-host-name: ${spring.application.name}-${api.version.zuul}
+    appname: ${spring.application.name}-${api.version}
+    instance-id: ${spring.application.name}-${api.version}
+    virtual-host-name: ${spring.application.name}-${api.version}
 zuul:
   routes:
     users-versioned:
@@ -17,6 +17,10 @@ zuul:
       path: /${api.version.sales}/sales/**
       serviceId: sale-service-${api.version.sales}
       strip-prefix: false
+    saleswithbid-versioned:
+      path: /${api.version.saleswithbid}/saleswithbid/**
+      serviceId: salewithbid-service-${api.version.saleswithbid}
+      strip-prefix: false
     bids-versioned:
       path: /${api.version.bids}/bids/**
       serviceId: bid-service-${api.version.bids}
@@ -26,6 +30,9 @@ zuul:
       strip-prefix: false
     sales:
       serviceId: sale-service
+      strip-prefix: false
+    saleswithbid:
+      serviceId: salewithbid-service
       strip-prefix: false
     bids:
       path: /bids/**
