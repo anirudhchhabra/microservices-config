@@ -10,20 +10,20 @@ eureka:
 zuul:
   routes:
     users-versioned:
-      path: /${api.version.users}/users/**
-      serviceId: user-service-${api.version.users}
+      path: /${service.version.users}/users/**
+      serviceId: user-service-${service.version.users}
       strip-prefix: false
     sales-versioned:
-      path: /${api.version.sales}/sales/**
-      serviceId: sale-service-${api.version.sales}
+      path: /${service.version.sales}/sales/**
+      serviceId: sale-service-${service.version.sales}
       strip-prefix: false
     saleswithbid-versioned:
-      path: /${api.version.saleswithbid}/saleswithbid/**
-      serviceId: salewithbid-service-${api.version.saleswithbid}
+      path: /${service.version.saleswithbid}/saleswithbid/**
+      serviceId: salewithbid-service-${service.version.saleswithbid}
       strip-prefix: false
     bids-versioned:
-      path: /${api.version.bids}/bids/**
-      serviceId: bid-service-${api.version.bids}
+      path: /${service.version.bids}/bids/**
+      serviceId: bid-service-${service.version.bids}
       strip-prefix: false
     users:
       serviceId: user-service
