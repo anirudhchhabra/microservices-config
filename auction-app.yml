@@ -19,4 +19,5 @@ spring:
    prefix: /WEB-INF/jsp/
    suffix: .jsp
 server.port: 80
+node.server.url: http://bangvmpltesappsrv.sapient.com:3000
       
