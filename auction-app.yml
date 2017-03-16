@@ -8,5 +8,12 @@ eureka:
 logging:
  level:
   feign: DEBUG
+  
+spring:
+ mvc:
+  view:
+   prefix: /WEB-INF/jsp/
+   suffix: .jsp
 
+server.port: 80
       
