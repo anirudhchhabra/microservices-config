@@ -1,7 +1,9 @@
 couchbase:
  host: bangvmpltescouchdb.sapient.com
  bucketName: microservices
- bucketConnectionTimeout: 15
+ bucketConnectionTimeout: 20000
+ viewTimeout: 20000
+ autoReleaseAfter: 5000
 server:
  port: 0
 spring:
