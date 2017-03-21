@@ -44,7 +44,7 @@ zuul:
       strip-prefix: true
     search:
       path: /search/**
-      url: http://bangvmpltesappsrv.sapient.com:9200/microservices/couchbaseDocument/_search 
+      url: http://bangvmpltesappsrv.sapient.com:9200/microservices_edge1/couchbaseDocument/_search 
       strip-prefix: true
       
     static:
