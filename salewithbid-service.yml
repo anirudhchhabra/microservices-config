@@ -2,6 +2,8 @@ couchbase:
  host: bangvmpltescouchdb.sapient.com
  bucketName: microservices
  bucketConnectionTimeout: 15
+elasticsearch:
+ host: http://bangvmpltescisonar.sapient.com:9200
 server:
  port: 0
 spring:
