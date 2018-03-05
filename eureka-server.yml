@@ -17,7 +17,7 @@ security:
     enabled: true
   user:
     name: eureka-user
-    password: zaq12wsx
+    password: 12345678
 
 logging:
  level:
