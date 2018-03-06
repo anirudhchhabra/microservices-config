@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-user:zaq12wsx@bangvmpltesappsrv.sapient.com:10001/eureka/
+      defaultZone: http://eureka-user:12345678@localhost:10001/eureka/
   instance:
     prefer-ip-address: true
     appname: ${spring.application.name}-${api.version}
@@ -40,11 +40,11 @@ zuul:
       strip-prefix: false  
     typeahead:
       path: /typeahead/**
-      url: http://bangvmpltesappsrv.sapient.com:9200/microservices_search4/couchbaseDocument/_search 
+      url: http://localhost:9200/microservices_search4/couchbaseDocument/_search 
       strip-prefix: true
     search:
       path: /search/**
-      url: http://bangvmpltesappsrv.sapient.com:9200/microservices/couchbaseDocument/_search 
+      url: http://localhost:9200/microservices/couchbaseDocument/_search 
       strip-prefix: true
       
     static:
